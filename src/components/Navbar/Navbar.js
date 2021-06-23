@@ -55,7 +55,7 @@ const Navbar = () => {
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to="/Login">
-                    <Button primary>Login/SignUp</Button>
+                    <Button primary>Login</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to="/Login">
