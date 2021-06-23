@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Registercandidate.css";
+import "./Registercandidate.css";
 import Reg from "./Reg.svg";
 const Register = () => {
   return (
