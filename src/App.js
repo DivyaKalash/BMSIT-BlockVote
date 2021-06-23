@@ -5,7 +5,7 @@ import Home from "./components/Homepage/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import Dash from "./components/Dashboard/Dash";
-import Register from "./components/Signup/Register";
+import Register from "./components/Start/Register";
 import Voter from "./components/Start/Voter";
 function App() {
   return (
