@@ -1,0 +1,102 @@
+* {
+  margin:;
+  padding: ;
+  box-sizing: 0;
+  font-family: sans-serif;
+  align: center;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align:center;
+  display: flex;
+  align: center;
+}
+section .imgbx {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  top: 10px;
+  padding: ;
+}
+section .imgbx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225de, #4a71c5, #278cff);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+section .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .contentbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+section .contentbx .formbx {
+  width: 50%;
+}
+section .contentbx .formbx h2 {
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #992e4d;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx {
+  margin-bottom: 25px;
+}
+section .contentbx .formbx .inputbx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #607d8b;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+}
+section .contentbx .formbx .inputbx input[type="submit"] {
+  background: #992e4d;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+section .contentbx .formbx .inputbx input[type="submit"]:hover {
+  background: #992e4d;
+}
+section .contentbx .formbx .remember {
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-weight: 400;
+  font-size: 14px;
+}
