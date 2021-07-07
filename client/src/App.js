@@ -4,7 +4,8 @@ import { Navbar } from "./components";
 import Home from "./components/Homepage/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
-import Dash from "./components/Dashboard/Dash";
+import Dash from "./components/Dash/Dash";
+import Content from "./components/Content/Content";
 import Register from "./components/Start/Register";
 import Voter from "./components/Start/Voter";
 import { isUserLoggedIn} from "./actions";
@@ -30,6 +31,8 @@ useEffect(() => {
         <Route path="/Login" exact component={Login} />
         <Route path="./Register"  component={Register} />
         <Route path="/Signup" exact component={Signup} />
+        
+            <Route path="/Content" exact component={Content} />
         <Route path="./Dash" exact component={Dash} />
 
         <Route path="./Voter" exact component={Voter} />
