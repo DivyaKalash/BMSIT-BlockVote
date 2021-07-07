@@ -45,18 +45,16 @@ const dispatch = useDispatch();
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
 
-              <NavItem>
-                <NavLinks to="/Signup">Sign Up</NavLinks>
-              </NavItem>
+              
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to="/Login">
-                    <Button primary>Login</Button>
+                    <Button primary>Login/Signup</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to="/Login">
                     <Button onClick={closeMobileMenu} fontBig primary>
-                      Login
+                      Login/Signup
                     </Button>
                   </NavBtnLink>
                 )}
@@ -73,7 +71,7 @@ const dispatch = useDispatch();
     return (
       <NavMenu onClick={handleClick} click={click}>
         <NavItem>
-                <NavLinks onClick={logout}>Signout</NavLinks>
+                <NavBtnLinks onClick={logout}>Signout</NavBtnLinks>
               </NavItem>
               </NavMenu>
     )
