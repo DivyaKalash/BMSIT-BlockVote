@@ -6,13 +6,13 @@ const Main = () => {
     <>
       <div class="container2">
         <Button style={{ background: '#992e4d', color: '#fff' }} r>
-          Apply For Nomination
+          Button1
         </Button>
       </div>
       <br />
       <div class="container2">
         <Button style={{ background: '#992e4d', color: '#fff' }} block>
-          Vote For Candidate
+          Button2
         </Button>
       </div>
     </>
