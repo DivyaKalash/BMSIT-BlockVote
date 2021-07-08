@@ -3,7 +3,7 @@ import "./Login.css";
 import login from "./login.svg";
 import { isUserLoggedIn, signin } from "../../actions";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -51,7 +51,9 @@ if(auth.authenticate){
               </label>
             </div>
             <div class="inputBx">
+              <Link to={"/Content"}>
               <input type="submit" value="Sign in" name="" />
+              </Link>
             </div>
             <div class="inputBx">
               <p>
