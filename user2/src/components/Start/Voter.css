@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  padding-top: 150px;
+ 
+}
+.container2 {
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  height: 200px;
+}
