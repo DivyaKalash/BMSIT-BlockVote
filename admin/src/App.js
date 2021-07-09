@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
-import { isUserLoggedIn} from "./actions";
+import { isUserLoggedIn, connectNodes} from "./actions";
 import Content from "./components/Content/Content";
 import Main from "./components/Main/Main";
 
@@ -17,9 +17,11 @@ function App() {
     if(!auth.authenticate){
     dispatch(isUserLoggedIn());
   }
+  if(auth.authenticate){
+    dispatch(connectNodes());
+  }
   
-  
-  }, []);
+  }, [auth.authenticate]);
   return (
     <>
       <Navbar />
