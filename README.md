@@ -2,25 +2,25 @@
 <h2>BMSIT's owned Blockchain Voting System.</h2>
 <!-- <img src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/logo.jpeg"> -->
   <h2 align="center">User Homepage</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20home.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20home.jpg"></p>
   <br><br>
   <h2 align="center">User Signup</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20signup.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20signup.jpg"></p>
   <br><br>
   <h2 align="center">User Login</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20login.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/user%20login.jpg"></p>
   <br><br>
   <h2 align="center">Voting Page</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/candidates.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/candidates.jpg"></p>
   <br><br>
   <h2 align="center">Admin: Homepage</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20status.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20status.jpg"></p>
   <br><br>
   <h2 align="center">Admin: Valid Blockchain</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20valid.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20valid.jpg"></p>
   <br><br>
   <h2 align="center">Admin: Result Declaration</h2>
-  <img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20declaration.jpg">
+  <p align="center"><img width="700px" src="https://github.com/DivyaKalash/BMSIT-BlockVote/blob/main/assets/admin%20declaration.jpg"></p>
   <br><br>
   <b><h1>Tech Stack Used💻</h1></b>
   <h2>Frontend:</h2>
