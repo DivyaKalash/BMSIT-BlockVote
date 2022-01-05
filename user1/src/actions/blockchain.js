@@ -71,6 +71,7 @@ export const mineBlock = () => {
                             votes
                         }
                     });
+                    return true;
         } else {
             dispatch({type: mineBlockConstants.MINE_BLOCK_FAILURE,
                         payload: {error: "Something went wrong in mining!"}});

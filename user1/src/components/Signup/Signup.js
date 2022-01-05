@@ -25,9 +25,10 @@ const Signup = () => {
     return <Redirect to={"/Login"}/>;
   }
 
-  if (user.loading) {
-    return <p>Loading...</p>;
-  }
+  // if (user.loading) {
+  //   return <p>Loading...</p>;
+  // }
+
 
   const userSignup = (e) => {
     e.preventDefault();
@@ -50,6 +51,7 @@ const Signup = () => {
             <div className="inputbx">
               <span>USN</span>
               <input type="text" placeholder="Enter USN" value={USN} onChange={(e) => setUSN(e.target.value)}  required />
+              
             </div>
             <div className="inputbx">
               <span>E-mail</span>

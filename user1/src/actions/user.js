@@ -24,6 +24,7 @@ export const signup = (user) => {
             type: userConstants.USER_REGISTER_FAILURE,
             payload: {
               error: res.data.error,
+              
             },
           });
         }
