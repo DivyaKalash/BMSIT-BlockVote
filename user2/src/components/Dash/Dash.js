@@ -1,27 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { addVote, mineBlock, replaceChain } from "../../actions";
 import "./Dash.css";
 import { useDispatch, useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
+
+
 
 import dash from "./dash.svg";
 const Dash = () => {
   const auth = useSelector(state => state.auth);
+  const block = useSelector(state => state.blockchain);
+
   const dispatch = useDispatch();
 
-  // const addVote1 = (vote1) =>{
-  //   const voteInfo = {
-  //     "voter": auth.user.USN,
-  //     "voted": vote1
-  //   }
-  //   dispatch(addVote(voteInfo));
-  // }
-  // const addVote2 = () =>{
-  //   const voteInfo = {
-  //     "voter": auth.user.USN,
-  //     "voted": "vote2"
-  //   }
-  //   dispatch(addVote(voteInfo));
-  // }
+ if (!auth.authenticate){
+  return <Redirect to={"/"} />;
+ }
 
   const blockchainMagic = (voteTO) => {
     const voteInfo = {
@@ -37,27 +31,55 @@ const Dash = () => {
         })
       }
     })
-  }
-  return (
-    <>
-    <button onClick={() => blockchainMagic("Kalash")}>Vote 1</button>
-    <button onClick={() => blockchainMagic("Abhishek") }>Vote 2</button>
-    </>
-    // <div className="hero-container">
-    //   <div className="main-container">
-    //     <div className="poster-container">
-    //         <img src={dash} className="poster" />
-    //     </div>
-    //     <div className="container3">
-    //       <div className="content3">
-    //         <h4 className="title">Name Of Candidate</h4>
-    //         <p className="description">Description About Candidate</p>
 
-    //         <button className="vote-btn">Vote</button>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+  }
+
+  const handle_alreadyVoted = (classNa) => {
+    let element = document.getElementById(classNa);
+    element.innerHTML = "You can't vote twice!"
+  }
+
+
+  return (
+    <div className="Voter-container">
+		<div className="main-container">
+			<div className="poster-container">
+                <a href="#"><img src={dash} className="poster" /></a>
+                <h1>Kalash</h1>
+			</div>
+			<div className="containerrr">
+				<div className="contentt">
+					<h4 className="title">Description</h4>
+					<p id="kal" className="des">
+						
+					</p>
+					
+					<button className="btnn" onClick={!block.already_voted ? () => blockchainMagic("Kalash") : () => handle_alreadyVoted("kal") }>Vote</button>
+				</div>
+			</div>
+		</div>
+
+		<div className="main-container">
+			<div className="poster-container">
+                <a href="#"><img src={dash} className="poster" /></a>
+                <h1>Abhishek</h1>
+			</div>
+			<div className="containerrr">
+				<div className="contentt">
+					<h4 className="title">Description</h4>
+					<p  id="abhi"className="des"></p>
+					
+					<button className="btnn" onClick={!block.already_voted ? () => blockchainMagic("Abhishek") : () => handle_alreadyVoted("abhi") }>Vote</button>
+				</div>
+			</div>
+		</div>
+    
+	</div>
+    // <>
+    // <button onClick={() => blockchainMagic("Kalash")}>Vote Kalash</button>
+    // <button onClick={() => blockchainMagic("Abhishek") }>Vote Abhishek</button>
+    // </>
+   
   );
 };
 export default Dash;

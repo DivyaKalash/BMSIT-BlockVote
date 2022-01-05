@@ -21,7 +21,7 @@ export const homeObjOne = {
   lightText: false,
   lightTextDesc: false,
   topLine: "E-Vote",
-  headline: "BMSIT Online Voting System ",
+  headline: "BMSIT - BlockVote",
   description: "Make Your Choice",
   buttonLabel: " Vote ",
   imgStart: "",
