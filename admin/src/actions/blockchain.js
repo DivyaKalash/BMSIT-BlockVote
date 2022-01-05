@@ -29,6 +29,7 @@ export const getResult = () => {
             dispatch({type: getResultConstants.GET_RESULT_SUCCESS,
                       payload: {Kalash, Abhishek, message}
                     });
+                    return true;
         } else {
             dispatch({type: getResultConstants.GET_RESULT_FAILURE,
             payload: {

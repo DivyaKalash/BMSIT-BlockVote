@@ -5,7 +5,9 @@ const initState = {
     error: "",
     message: "",
     Kalash: null,
-    Abhishek: null
+    Abhishek: null,
+    valid: false,
+    getRes: false
 };
 
 export default (state = initState, action) => {
@@ -21,7 +23,9 @@ export default (state = initState, action) => {
             state = {
                 ...state,
                 loading: false,
-                message: action.payload.message
+                message: action.payload.message,
+                valid: true,
+                getRes: false
             }
             break;
 
@@ -46,7 +50,9 @@ export default (state = initState, action) => {
                 loading: false,
                 Kalash: action.payload.Kalash,
                 Abhishek: action.payload.Abhishek,
-                message: action.payload.message
+                message: action.payload.message,
+                valid: false,
+                getRes: true
             }
             break;
 

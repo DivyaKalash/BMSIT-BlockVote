@@ -47,13 +47,11 @@ const dispatch = useDispatch();
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
 
-              <NavItem>
-                <NavLinks to="/Signup">Sign Up</NavLinks>
-              </NavItem>
+              
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to="/Login">
-                    <Button primary>Login</Button>
+                    <Button primary>Login/Signup</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to="/Login">
@@ -75,8 +73,21 @@ const dispatch = useDispatch();
     return (
       <NavMenu onClick={handleClick} click={click}>
         <NavItem>
-                <NavLinks onClick={logout}>Signout</NavLinks>
+        <NavLinks to="/">Home</NavLinks>
               </NavItem>
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink>
+                    <Button onClick={logout} primary>Signout</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink >
+                    <Button onClick={logout} fontBig primary>
+                      Signout
+                    </Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
               </NavMenu>
     )
   }
@@ -87,7 +98,7 @@ const dispatch = useDispatch();
           <NavbarContainer>
             <NavLogo to="/">
               <NavIcon />
-              BMSIT
+              BMSIT Admin
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

@@ -6,6 +6,9 @@ import Signup from "./components/Signup/Signup";
 import { isUserLoggedIn, connectNodes} from "./actions";
 import Content from "./components/Content/Content";
 import Main from "./components/Main/Main";
+import Home from "./components/Homepage/Home";
+
+
 
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -26,7 +29,7 @@ function App() {
     <>
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Login} />
+        <Route path="/" exact component={Home} />
         <Route path="/Login" exact component={Login} />
         <Route path="/Signup" exact component={Signup} />
          <Route path="/Content" exact component={Content} />
